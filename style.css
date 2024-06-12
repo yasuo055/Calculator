@@ -62,7 +62,7 @@ button {
     background-color: var(--calculator);
 }
 
-.display {
+.Inputs {
     padding: 10px 20px;
     border: 2px var(--border) solid;
     border-radius: 5px;
@@ -73,12 +73,12 @@ button {
     word-break: break-all;
 }
 
-.display-last {
+.Inputs-last {
     min-height: 32px;
     font-size: 24px;
 }
 
-.display-current {
+.Inputs-current {
     min-height: 64px;
     font-size: 42px;
 }
