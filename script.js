@@ -5,13 +5,13 @@ let shouldResetInputs = false;
 
 const numberButtons = document.querySelectorAll("[data-number]");
 const operatorButtons = document.querySelectorAll("[data-operator]");
-const equalsButton = document.getElementById("equalsBtn");
-const clearButton = document.getElementById("clearBtn");
-const deleteButton = document.getElementById("deleteBtn");
-const pointButton = document.getElementById("pointBtn");
-const lastOperationInputs = document.getElementById("lastOperationInputs");
-const currentOperationInputs = document.getElementById(
-  "currentOperationInputs"
+const equalsButton = document.querySelector("#equalsBtn");
+const clearButton = document.querySelector("#clearBtn");
+const deleteButton = document.querySelector("#deleteBtn");
+const pointButton = document.querySelector("#pointBtn");
+const lastOperationInputs = document.querySelector("#lastOperationInputs");
+const currentOperationInputs = document.querySelector(
+  "#currentOperationInputs"
 );
 
 window.addEventListener("keydown", handleKeyboardInput);
