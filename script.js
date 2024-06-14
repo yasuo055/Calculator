@@ -92,32 +92,16 @@ function handleKeyboardInput(e) {
   if (e.key === ".") appendPoint();
   if (e.key === "=" || e.key === "Enter") evaluate();
   if (e.key === "Backspace") deleteNumber();
-  if (e.key === "Escape") clear();
+  if (e.key === "Escape") clear(); 
   if (e.key === "+" || e.key === "-" || e.key === "*" || e.key === "/")
     setOperation(convertOperator(e.key));
 }
 
 function convertOperator(keyboardOperator) {
   if (keyboardOperator === "/") return "÷";
-  if (keyboardOperator === "*") return "*";
+  if (keyboardOperator === "*") return "×";
   if (keyboardOperator === "+") return "+";
   if (keyboardOperator === "-") return "−";
-}
-
-function add(firstOperand, secondOperand) {
-  return firstOperand + secondOperand;
-}
-
-function substract(firstOperand, secondOperand) {
-  return firstOperand - secondOperand;
-}
-
-function multiply(a, secondOperand) {
-  return firstOperand * secondOperand;
-}
-
-function divide(firstOperand, secondOperand) {
-  return firstOperand / secondOperand;
 }
 
 function operate(operator, firstOperand, secondOperand) {
@@ -125,14 +109,14 @@ function operate(operator, firstOperand, secondOperand) {
   secondOperand = Number(secondOperand);
   switch (operator) {
     case "+":
-      return add(firstOperand, secondOperand);
+      return firstOperand + secondOperand;
     case "−":
-      return substract(firstOperand, secondOperand);
-    case "*":
-      return multiply(firstOperand, secondOperand);
+      return firstOperand - secondOperand;
+    case "×":
+      return firstOperand * secondOperand;
     case "÷":
       if (secondOperand === 0) return null;
-      else return divide(firstOperand, secondOperand);
+      else return firstOperand / secondOperand;
     default:
       return null;
   }
