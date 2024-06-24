@@ -41,6 +41,38 @@ button {
     outline: none;
 }
 
+.btn {
+    padding: 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    background-color: var(--btn);
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: var(--btn-active);
+}
+
+.btn:active {
+    background-color: var(--btn-hover);
+}
+
+.btn-delete {
+    background-color: var(--btn-delete-active);
+}
+
+.btn-delete:hover {
+    background-color: var(--btn-delete-hover);
+}
+
+.btn-clear {
+    background-color: var(--btn-clear-active);
+}
+
+.btn-clear:hover {
+    background-color: var(--btn-clear-hover);
+}
+
 /* MAIN */
 
 .main {
@@ -52,7 +84,6 @@ button {
     padding: 20px; 
     margin-top: 80px; 
 }
-
 
 .calculator {
     width: 400px;
@@ -92,40 +123,6 @@ button {
 .span-2 {
     grid-column: span 2;
 }
-
-.btn {
-    padding: 20px;
-    border: 2px var(--border) solid;
-    border-radius: 5px;
-    background-color: var(--btn);
-    font-size: 20px;
-}
-
-.btn:hover {
-    background-color: var(--btn-active);
-}
-
-.btn:active {
-    background-color: var(--btn-hover);
-}
-
-.btn-delete {
-    background-color: var(--btn-delete-active);
-}
-
-.btn-delete:hover {
-    background-color: var(--btn-delete-hover);
-}
-
-.btn-clear {
-    background-color: var(--btn-clear-active);
-}
-
-.btn-clear:hover {
-    background-color: var(--btn-clear-hover);
-}
-
-
 
 /* Disables input spinners in calc display */
 input[type='number']::-webkit-inner-spin-button,
